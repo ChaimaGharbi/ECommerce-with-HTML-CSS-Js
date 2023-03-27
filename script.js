@@ -32,6 +32,9 @@ if (path === "shop.html" || path === "sproduct.html") {
 }
 
 const products = document.getElementById('product1');
-    products.addEventListener('click', () => {
-      window.location.href = 'sproduct.html';
-})
+if (products) {
+  products.addEventListener('click', () => {
+    window.location.href = 'sproduct.html';
+  })
+}
+    
